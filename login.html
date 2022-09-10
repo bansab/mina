@@ -1,0 +1,33 @@
+<html>
+<head><title>MINA HEALTH CARE</title>
+<link rel="stylesheet" href="mina.css">
+</head>
+<body>
+<div>
+<h1>Mina Health Care
+<button id="logbtn" onclick="document.getElementById('myModal').style.display='block'">Login</button></h1>
+<ul>
+<li><a href="mina.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="location.html">Location</a></li>
+<li><a href="appointment.html">Appointments</a></li>
+<li><a href="login.html">Login | Register</a></li>
+</ul>
+</div>
+<script src="mina.js"></script>
+<div id="myModal" class="modal">
+	<div class="modal-content">
+		<span class="close" onclick="document.getElementById('myModal').style.display='none'" title="Close Modal">&times;</span>
+	<form name="loginform" onSubmit="return validateForm(usr,pword)" action="mina.html">
+    <h3>Username
+    <input type="text" name="usr" placeholder="username"></h3>
+    <h3>Password
+    <input type="password" name="pword" placeholder="password"></h3>
+    <input type="submit" value="LOGIN" >
+    <a href="register.html"><h4>First time user? Register here </h4></a>
+    <a href="forgotpwd"><h4>forgot password?</h4></a>
+  </form>
+</div>
+</div>
+</body>
+</html>

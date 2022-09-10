@@ -1,0 +1,39 @@
+<?php
+include_once 'db-inc.php'
+
+?>
+<html>
+<head><title>MINA HEALTH CARE</title>
+<link rel="stylesheet" href="mina.css">
+<script src="mina.js"></script>
+</head>
+<body>
+<div>
+<h1>MINA HEALTH CARE
+<button id="logbtn" onclick="document.getElementById('myModal').style.display='block'">Login</button>
+</h1>
+<ul>
+<li><a href="mina.html">HOME</a></li>
+<li><a href="services.html">SERVICES</a></li>
+<li><a href="location.html">LOCATION</a></li>
+<li><a href="appointment.html">APPOINTMENTS</a></li>
+</ul>
+</div>
+<div>
+	<form>
+		<h4>Enter Patient Name
+		<input type="text" name="pname"></h4>
+		<h4>Enter Patient Age
+		<input type="text" name="page"></h4>
+		<h4>Select Doctor for consultation
+		<input type="radio" name="doc"> Dr. Javed Mohsin
+		<input type="radio" name="doc1"> Dr. Ameen
+		<input type="radio" name="doc2"> Dr. Pooja
+		<input type="radio" name="doc3"> Dr. Mithun</h4>
+		<h4>Select the suitable time for appointment
+		<input type="datetime-local" name="time"></h4>
+		<input type="button" value="submit">
+	</form>
+</div>
+</body>
+</html>

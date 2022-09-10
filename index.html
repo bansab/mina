@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Mina Health Care</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="http://localhost/webdev/mina/mina.css">
+<script src="mina.js"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff2e9;
+  font-size: 30px;
+}
+
+ol{
+  margin: 20;
+  padding: 50;
+  overflow: hidden;
+  background-color: #fff2e9;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #fff;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+div.container {
+  text-align: center;
+}
+
+ol.myul {
+  display: inline-block;
+  text-align: left;
+  font-size: 40;
+  padding: 30px 30px;
+  list-style-type: square;
+}
+
+h2{
+background-color: #fff2e6;
+  text-align:center;
+}
+
+</style>
+</head>
+<body>
+<h1>
+Mina Health Care
+</h1>
+<div class="menu">
+<ul>
+<li><a href="mina.html" style="text-decoration: none;">Home</a></li>
+<li style="float:center;"><a href="appointment.php" style="text-decoration: none;">Appointments</a></li>
+<li style="float:right;"><a href="login.php" style="text-decoration: none;">Login | Register </a></li>
+</ul>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="http://localhost/webdev/mina/DSC_4705.JPG" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="http://localhost/webdev/mina/DSC_4712.JPG" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="http://localhost/webdev/mina/DSC_4707.JPG" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="http://localhost/webdev/mina/DSC_4713.JPG" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="http://localhost/webdev/mina/DSC_4746.JPG" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="http://localhost/webdev/mina/DSC_4752.JPG" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="http://localhost/webdev/mina/DSC_4815.JPG" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+   <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h2>SERVICES</h2>
+<div class="container">
+<ol class="myul">
+  <li><h4>OPD and IP facilities available</h4></li><br>
+<li><h4>Minor Surgeries</h4></li><br>
+<li><h4>ECG facility available</h4></li><br>
+<li><h4>Nursing staff</h4></li>
+</ol>
+<ol class="myul">
+  <li><h4>Medicine & Diabetology</h4></li><br>
+<li><h4>Circumcision</h4></li><br>
+<li><h4>All major Blood tests are done</h4></li><br>
+<li><h4>Pharmacy</h4></li>
+</ol>
+</div>
+<div>
+  <h2>LOCATION</h2>
+  <h3>
+    MINA HEALTH CARE<br>
+  7th A Main, next to Mina Masjid,<br> BTM 1st Stage, Bengaluru, Karnataka 560029
+</h3>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8170291772726!2d77.59991801482147!3d12.919478590890122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1538b71e6af1%3A0x21221d422f75de26!2sMINA%20HEALTH%20CARE!5e0!3m2!1sen!2sin!4v1662219545948!5m2!1sen!2sin" width="100%" height="450" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+
+</html>

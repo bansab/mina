@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MINA HEALTH CARE</title>
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff2e9;
+  font-size: 30px;
+}
+
+ol{
+  margin: 20;
+  padding: 50;
+  overflow: hidden;
+  background-color: #fff2e9;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #fff;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+div.container {
+  text-align: center;
+}
+
+ol.myul {
+  display: inline-block;
+  text-align: left;
+  font-size: 40;
+  padding: 30px 30px;
+  list-style-type: square;
+}
+
+h2{
+background-color: #fff2e6;
+  text-align:center;
+}
+
+</style>
+</head>
+<body>
+    <div>
+<h1>Mina Health Care</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="appointment.php">Appointments</a></li>
+<li style="float:right;"><a href="login.php">Login | Register</a></li>
+</ul>
+</div>
+	     <div class="container">
+            
+            <h2>Enter the registered email-id</h2>
+
+            <form action="send-token-email.php" method="post">
+                <div class="form-group">
+                   <h1> <label for="email">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email"></h1>
+                </div>
+                <input type="submit" name="submit" class="submit-btn">
+            </form>
+            
+      </div>
+ 
+</body>
+</html>
